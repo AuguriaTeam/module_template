@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="helpdesk_portal_inherit_auguria" inherit_id="helpdesk.tickets_followup">
+        <xpath expr="//div[@t-if='ticket.user_id']" position="replace">
+
+        </xpath>
+    </template>
+</odoo>

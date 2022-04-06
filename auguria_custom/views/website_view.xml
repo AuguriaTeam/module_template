@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="header_cart_link_navbar_inherit_auguria" inherit_id="website_sale.header_cart_link">
+        <xpath expr="//t[@t-name='website_sale.header_cart_link']" position="attributes">
+            <attribute name="t-if">not website.cart_header</attribute>
+        </xpath>
+    </template>
+
+    <record id="website_inherite_auguria" model="ir.ui.view">
+        <field name="name">view.website.inherit.auguria</field>
+        <field name="model">website</field>
+        <field name="inherit_id" ref="website.view_website_form"/>
+        <field name="arch" type="xml">
+            <field name="logo" position="after">
+
+                <field name="cart_header"/>
+            </field>
+        </field>
+    </record>
+</odoo>
